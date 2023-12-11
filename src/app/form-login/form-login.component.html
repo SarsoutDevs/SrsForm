@@ -1,0 +1,101 @@
+<!-- <p>form-login works!</p> -->
+
+
+<style>
+    h1,section {
+            text-align: center;       
+            -moz-animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+         }
+         @-moz-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:150%;
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+         @-webkit-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:150%;
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+</style>
+
+
+<br>
+<h1 style="margin-left: 30px;">Welcome To My Page</h1>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <mdb-form-control>
+                <input mdbInput type="email" id="typeEmail" class="form-control" />
+                <label mdbLabel class="form-label" for="typeEmail" style="color: white;">Email input</label>
+              </mdb-form-control>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <div class="row g-3 align-items-center">
+                <mdb-form-control class="col-auto">
+                  <input mdbInput type="password" id="formTextExample2" class="form-control" aria-describedby="textExample2" />
+                  <label mdbLabel class="form-label" for="formTextExample2" style="color: white;">Password</label>
+                </mdb-form-control>
+                <div class="col-auto">
+                  <span id="textExample2" class="form-text"> Must be 8-20 characters long. </span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-around align-items-center mb-4">
+              <!-- Checkbox -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                <label class="form-check-label" for="form1Example3"> Remember me </label>
+              </div>
+              <a href="#!">Forgot password?</a>
+            </div>
+  
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+            <button class="btn btn-lg btn-block btn-primary" routerLink="/register" style="background-color: #42b72a"> CREATE AN ACCOUNT</button>
+  
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+            </div>
+  
+            <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998"
+              role="button">
+              <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+            </a>
+            <button class="btn btn-lg btn-block btn-primary" style="background-color: rgb(196, 4, 4);"
+              type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>

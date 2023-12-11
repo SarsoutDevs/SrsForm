@@ -1,0 +1,17 @@
+<div class= "face-snap-card" [ngClass] = "{snapped : faceSnap.buttonText === 'Oops, Un Snap !'}">
+    <div class="example-button-row">
+        <button class="mat-button">My</button>
+        <button class="mat-button-color-prim">Face</button>
+        <button class="mat-button-color">Snap</button>
+        <button class="mat-button-color">Project</button>
+        <button class="mat-button-disabled">In</button>
+        <a [class.snapped]="faceSnap.buttonText === 'Oops, Un Snap !'" class="routerLink">Angular</a>
+    </div>
+    <!-- <p>face-snap-g1 works!</p> -->
+    <h1>{{faceSnap.title}}</h1>
+    <p>Mis en ligne le {{faceSnap.createDate}}</p>
+    <img [src] ="faceSnap.imageUrl" [alt] ="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p>{{ faceSnap.snaps }}</p>
+    <button (click)= "faceSnap.onSnap()" style="color: white;">{{ faceSnap.buttonText }}</button>
+</div>

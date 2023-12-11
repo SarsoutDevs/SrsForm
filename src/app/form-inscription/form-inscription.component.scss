@@ -1,0 +1,60 @@
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"]{
+    width: 25%;
+    text-align: center;
+    // display: block;
+    // margin-right: auto;
+    // margin-left: auto;
+
+}
+
+input[type="email"]{
+    width: 25%;
+    text-align: center;
+    // display: block;
+    // margin-right: auto;
+    // margin-left: auto;
+
+}
+
+input[type="password"]{
+    width: 25%;
+    text-align: center;
+    // display: block;
+    // margin-right: auto;
+    // margin-left: auto;
+
+}
+
+input[type="checkbox"]{
+    margin-top: 20px;
+}
+
+.labterm{
+    margin-top: 16px;
+}
+
+.divcen{
+    text-align: center;
+    width: 50%;       
+}
+
+section.s1{
+    margin-left: 80px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+button.sign{
+    margin-top: 20px;
+}
+
+.dimg{
+    position: absolute;
+    margin-left: 700px;
+    top: 20%;
+}
+

@@ -1,0 +1,70 @@
+<!-- <app-form-inscription></app-form-inscription> -->
+<!-- <app-form-login></app-form-login> -->
+<p class="nav" style="background-color: #3b5998;">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <a class="navbar-brand" routerLink="login" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <button mat-button [matMenuTriggerFor]="menu" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Menu</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/login">
+          <span class="material-icons">
+            login
+          </span>
+            Sign In</button>
+        <button mat-menu-item routerLink="/register">
+          <span class="material-icons">
+            account_circle
+          </span>
+            Sign Up</button>
+        </mat-menu>
+
+        <!-- <span><a href="#" style="color: white;">Home</a></span> -->
+        <!-- <button type="button" class="btn btn-outline-light" data-mdb-ripple-init data-mdb-ripple-color="dark">Home</button> -->
+        <span class="example-spacer"></span>
+        
+        <br><br><br>
+        <div mdbDropdown class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              SELECT PAGE
+            </button>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" routerLink="/page1">Page 1</a></li>
+              <li><a class="dropdown-item" routerLink="/page2">Page 2</a></li>
+              <li><a class="dropdown-item" routerLink="/page3">Page 3</a></li>
+            </ul>
+          </div>
+        
+      </mat-toolbar-row>
+    </mat-toolbar>
+</p>
+
+
+<!-- test navbar -->
+<!-- <p class="ptest">
+  <mat-toolbar color="primary">
+    <span class="material-icons">
+      logout
+      </span>
+    <a class="navbar-brand" routerLink="login" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Déconnexion</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</p> -->
+
+<!-- <app-page-two *ngFor="let faceSnap of faceSnaps" [faceSnap]="faceSnap"></app-page-two> -->
+
+<!-- <app-page-three></app-page-three> -->
+
+<router-outlet></router-outlet>
